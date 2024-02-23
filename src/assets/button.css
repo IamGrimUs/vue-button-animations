@@ -415,7 +415,7 @@
   left: 3px;
   width: 100%;
   height: 100%;
-  background-color: hsl(0, 0%, 23%);
+  background-color: hsl(0, 0%, 30%);
   z-index: -1;
   mix-blend-mode: multiply;
   transition: all 0.2s;
@@ -528,4 +528,281 @@
 }
 
 .button-16 {
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 100%);
+  transition: all 0.25s;
+  border: none;
+}
+.button-16:before {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid hsl(0, 0%, 15%);
+  border-left: 2px solid hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-16:hover:before,
+.button-16:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.button-16:after {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  content: '';
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid hsl(0, 0%, 15%);
+  border-right: 2px solid hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+
+.button-17 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-17:hover {
+  color: hsl(0, 0%, 100%);
+}
+.button-17:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: hsl(0, 0%, 15%);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.button-17:hover:before {
+  opacity: 1;
+  transform: rotate(15deg);
+}
+.button-17:hover > span:before {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+  transform: translate(-45%, -27%) rotate(360deg);
+}
+.button-17 > span {
+  position: relative;
+  color: transparent;
+}
+.button-17 > span:before {
+  content: 'B';
+  color: hsl(0, 0%, 15%);
+  position: absolute;
+  transition: all 0.2s;
+}
+
+.button-18 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+  border: none;
+  overflow: hidden;
+}
+.button-18:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-18:hover:before {
+  left: 0;
+}
+.button-18:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-18:hover:after {
+  right: 0;
+}
+.button-18 > span:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-18:hover > span:before {
+  top: 0;
+}
+.button-18 > span:after {
+  content: '';
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-18:hover > span:after {
+  bottom: 0;
+}
+
+.button-19 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.button-19:hover {
+  color: hsl(0, 0%, 100%);
+}
+.button-19 > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(199, 100%, 50%);
+  left: 0;
+  top: calc(100% + 22px);
+  transition: all 0.5s;
+  z-index: -1;
+}
+.button-19 > span:before {
+  content: '';
+  width: 100%;
+  height: 22px;
+  top: -22px;
+  left: 0;
+  position: absolute;
+  background: url('@/assets/wave.png');
+  animation: wave 0.5s linear infinite;
+}
+.button-19:hover > span {
+  top: 0;
+}
+
+.button-20 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  transition: all 0.25s;
+  border: none;
+}
+.button-20 > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 3px solid hsl(0, 0%, 15%);
+  z-index: -1;
+}
+.button-20 > span:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 500%;
+  background-color: hsl(0, 0%, 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-70deg);
+  transition: all 0.25s;
+}
+.button-20:hover > span:before {
+  width: 100%;
+  background-color: hsl(0, 0%, 15%);
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.button-20:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.button-21 {
+  color: hsl(0, 0%, 100%);
+  transition: all 0.25s;
+  border: none;
+}
+.button-21:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 50%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  z-index: -1;
+  transform: skew(30deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.button-21:hover:before {
+  transform: skewX(0deg);
+  left: 50%;
+  top: 0;
+}
+.button-21:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 51%;
+  width: 50%;
+  height: 100%;
+  background-color: hsl(0, 0%, 30%);
+  z-index: -1;
+  transform: skew(30deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.button-21:hover:after {
+  transform: skewX(0deg);
+  left: 1px;
+  top: 0;
+}
+
+.button-22 {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+  border-radius: 100px;
+}
+.button-22:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 30%);
+  z-index: -1;
+  transition: all 0.25s;
+  border-radius: 100px;
+}
+.button-22:hover:before {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.button-22:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.button-22:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 118px;
+  }
 }

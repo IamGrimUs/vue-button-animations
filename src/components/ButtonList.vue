@@ -1,7 +1,18 @@
+<script>
+export default {
+  data() {
+    return {
+      buttonsWithEmptySpans: [12, 14, 18, 19, 20]
+    }
+  }
+}
+</script>
+
 <template>
   <section>
     <button v-for="n in 25" :key="n" :class="`button-${n}`">
-      <template v-if="n === 12 || n === 14"><span></span>Button</template>
+      <template v-if="buttonsWithEmptySpans.includes(n)"><span></span>Button</template>
+      <template v-else-if="n === 17"><span>B</span>utton</template>
       <template v-else>Button</template>
     </button>
   </section>

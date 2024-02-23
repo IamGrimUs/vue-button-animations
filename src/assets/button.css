@@ -1,0 +1,531 @@
+.button-1 {
+  color: hsl(0, 0%, 15%);
+  font-weight: 300;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.button-1:hover {
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+.button-2 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  position: relative;
+}
+.button-2:before {
+  background-color: hsl(0, 0%, 15%);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(100%);
+  transform-origin: bottom left;
+  transition: all 0.25s ease-in-out;
+  width: 100%;
+  z-index: -1;
+}
+.button-2:hover {
+  color: #ffffff;
+}
+.button-2:hover:before {
+  transform: translateX(0);
+}
+
+.button-3 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  position: relative;
+}
+.button-3:before {
+  background-color: hsl(0, 0%, 15%);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  transition: transform 0.25s;
+  width: 100%;
+  z-index: -1;
+}
+.button-3:hover {
+  color: #ffffff;
+}
+.button-3:hover:before {
+  transform: rotate(0deg);
+}
+
+.button-4 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  position: relative;
+}
+.button-4:before {
+  background-color: hsl(0, 0%, 15%);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateX(90deg);
+  transition: transform 0.25s;
+  width: 100%;
+  z-index: -1;
+}
+.button-4:after {
+  background-color: hsl(0, 0%, 15%);
+  left: 0;
+  top: 0;
+  transform: rotateY(90deg);
+  transition: transform 0.25s;
+  z-index: -1;
+}
+.button-4:hover {
+  color: #ffffff;
+}
+.button-4:hover:before {
+  transform: rotateX(0);
+}
+.button-4:hover:after {
+  transform: rotateY(0);
+}
+
+.button-5 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  position: relative;
+}
+.button-5:before {
+  align-items: center;
+  background-color: hsl(0, 0%, 15%);
+  content: 'Button';
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-180%);
+  transition: transform 0.25s;
+  width: 100%;
+  z-index: 1;
+}
+.button-5:hover {
+  color: #ffffff;
+}
+.button-5:hover:before {
+  transform: rotate(0deg);
+}
+
+.button-6 {
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  background-color: hsl(0, 0%, 15%);
+}
+.button-6:before {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  content: '';
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%) rotate(45deg);
+  transition: transform 0.75s;
+  width: 150%;
+  height: 20px;
+  z-index: 1;
+}
+.button-6:hover {
+  background-color: hsl(0, 0%, 15%);
+}
+.button-6:hover:before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+.button-7 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  position: relative;
+  background-color: hsl(0, 0%, 15%);
+}
+.button-7:before {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 15%);
+  content: 'Button';
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.button-7:after {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 15%);
+  content: 'Button';
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 100%);
+  transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.button-7:hover:before {
+  transform: translate(100%, -100%);
+}
+.button-7:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-8 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  position: relative;
+}
+.button-8:before {
+  content: 'Button';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.25s;
+}
+.button-8:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.button-9 {
+  color: hsl(0, 0%, 15%);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.button-9:hover {
+  color: hsl(0, 0%, 100%);
+}
+.button-9:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.button-9:hover:before {
+  height: 190%;
+}
+
+.button-10 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.5s;
+}
+.button-10:before {
+  align-items: center;
+  background-color: hsl(0, 0%, 30%);
+  color: hsl(0, 0%, 100%);
+  content: 'button';
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  width: 100%;
+}
+.button-10:hover:before,
+.button-10:hover:after {
+  transform: rotateX(0deg);
+}
+.button-10:after {
+  align-items: center;
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 100%);
+  content: 'Button';
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+  width: 100%;
+}
+
+.button-11 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.5s;
+}
+.button-11:before {
+  content: 'Button';
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.button-11:hover:before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+.button-11:after {
+  content: 'Button';
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotateY(0);
+  transition: all 0.5s;
+}
+.button-11:hover:after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
+}
+
+.button-12 {
+  border: none;
+  color: hsl(0, 0%, 15%);
+  transition: all 0.5s;
+}
+.button-12:before,
+.button-12:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+.button-12:before {
+  left: 0;
+  box-shadow: -100px 0 0 hsl(0, 0%, 15%);
+}
+.button-12:after {
+  right: 0;
+  box-shadow: 100px 0 0 hsl(0, 0%, 15%);
+}
+.button-12:hover:before {
+  left: 50%;
+  box-shadow: 30px 0 0 hsl(0, 0%, 15%);
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+}
+.button-12:hover:after {
+  right: 50%;
+  box-shadow: 30px 0 0 hsl(0, 0%, 15%);
+  transform: translateX(50%) translateY(-50%);
+  opacity: 1;
+}
+.button-12 > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 8px;
+  transform: scale(0);
+  transition: all 0.3s;
+  z-index: -1;
+}
+.button-12:hover > span {
+  transform: scale(1);
+}
+.button-12:hover {
+  color: hsl(0, 0%, 100%);
+  transition-delay: 0.2s;
+}
+
+.button-13 {
+  border: none;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.5s;
+  background-color: transparent;
+}
+.button-13:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+.button-13:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 23%);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+.button-13:hover:before {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(75deg);
+}
+.button-13:hover:after {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-75deg);
+}
+.button-13:hover {
+  color: hsl(0, 0%, 15%);
+}
+
+.button-14 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+  overflow: hidden;
+}
+.button-14:before,
+.button-14:after,
+.button-14 > span:before,
+.button-14 > span:after {
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  z-index: -1;
+  transition: all 0.25s;
+}
+.button-14:before {
+  top: 0;
+  left: -25%;
+  transition-delay: 0.1s;
+}
+.button-14:after {
+  top: -100%;
+  left: 25%;
+  transition-delay: 0.2s;
+}
+.button-14:hover:before {
+  top: 0;
+  left: 0;
+}
+.button-14:hover:after {
+  top: 0;
+  left: 25%;
+}
+.button-14:hover {
+  color: hsl(0, 0%, 100%);
+}
+.button-14 span:before {
+  top: 100%;
+  right: 25%;
+  transition-delay: 0.3s;
+}
+.button-14 span:after {
+  top: 0;
+  right: -25%;
+  transition-delay: 0.4s;
+}
+.button-14:hover span:before {
+  top: 0;
+  right: 25%;
+}
+.button-14:hover span:after {
+  top: 0;
+  right: 0;
+}
+
+.button-15 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+  border: none;
+}
+.button-15:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  border-left: 2px solid hsl(0, 0%, 15%);
+  border-right: 2px solid hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-15:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  top: 0;
+  left: -15px;
+  border-top: 2px solid hsl(0, 0%, 15%);
+  border-bottom: 2px solid hsl(0, 0%, 15%);
+  transition: all 0.25s;
+  transition-delay: 0.25s;
+}
+.button-15:hover:before {
+  transform: rotateY(180deg);
+}
+.button-15:hover:after {
+  transform: rotateX(180deg);
+}
+
+.button-16 {
+}

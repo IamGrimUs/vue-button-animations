@@ -1,0 +1,18 @@
+@import './base.css';
+@import './button.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  padding: 0 2rem;
+}
+button {
+  background: none;
+  border: 3px solid hsl(0, 0%, 15%);
+  cursor: pointer;
+  flex-basis: calc(1 / 6 * 100%);
+  font-family: sans-serif;
+  font-size: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}

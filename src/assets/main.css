@@ -16,3 +16,65 @@ button {
   padding: 1.25rem 1.5rem;
   position: relative;
 }
+.background-color {
+  flex-basis: calc(1 / 6 * 100%);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 15%);
+}
+.button-container {
+  position: relative;
+  width: 100%;
+  max-width: 270px;
+}
+.button-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.25s;
+  transition-delay: 0s;
+}
+.button-container:hover::before {
+  bottom: 0px;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.25s;
+}
+.button-container::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.25s;
+  transition-delay: 0s;
+}
+.button-container:hover::after {
+  top: 0px;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.25s;
+}
+.button-container::after,
+.button-container::before {
+  background-color: red;
+  box-shadow:
+    0 0 5px red,
+    0 0 15px red,
+    0 0 30px red,
+    0 0 60px red;
+}

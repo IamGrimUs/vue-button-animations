@@ -10,11 +10,27 @@ export default {
 
 <template>
   <section>
-    <button v-for="n in 25" :key="n" :class="`button-${n}`">
-      <template v-if="buttonsWithEmptySpans.includes(n)"><span></span>Button</template>
-      <template v-else-if="n === 17"><span>B</span>utton</template>
-      <template v-else>Button</template>
-    </button>
+    <template v-for="n in 25" :key="n">
+      <template v-if="n === 25">
+        <div class="background-color">
+          <div class="button-container">
+            <button :class="`button-${n}`">Button</button>
+          </div>
+        </div>
+      </template>
+      <button v-else :class="`button-${n}`">
+        <template v-if="buttonsWithEmptySpans.includes(n)"><span></span>Button</template>
+        <template v-else-if="n === 17"><span>B</span>utton</template>
+        <template v-else-if="n === 24">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Button
+        </template>
+        <template v-else>Button</template>
+      </button>
+    </template>
   </section>
 </template>
 
@@ -28,7 +44,7 @@ section {
   section {
     align-items: flex-start;
     flex-flow: row wrap;
-    gap: 3rem;
+    gap: 5rem;
     justify-content: center;
     margin: 2rem auto;
   }

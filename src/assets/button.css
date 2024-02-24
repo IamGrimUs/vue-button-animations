@@ -798,6 +798,182 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.button-23 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+  overflow: hidden;
+}
+.button-23:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 35px solid hsl(0, 0%, 15%);
+  border-bottom: 35px solid hsl(0, 0%, 15%);
+  border-right: 35px solid transparent;
+  transition: all 0.25s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+.button-23:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 35px solid hsl(0, 0%, 15%);
+  border-bottom: 35px solid hsl(0, 0%, 15%);
+  border-left: 35px solid transparent;
+  transition: all 0.25s;
+  z-index: -1;
+  transform: translateX(100%);
+}
+.button-23:hover {
+  color: hsl(0, 0%, 100%);
+}
+.button-23:hover:before,
+.button-23:hover:after {
+  transform: translateX(0);
+}
+
+.button-24 {
+  color: hsl(0, 0%, 15%);
+  transition: all 0.25s;
+}
+.button-24:hover {
+  color: hsl(0, 0%, 100%);
+  border: 3px solid transparent;
+}
+.button-24 span {
+  position: absolute;
+  background-color: hsl(0, 0%, 15%);
+  height: 100%;
+  box-shadow:
+    0 0 10px hsl(0, 0%, 15%),
+    0 0 20px hsl(0, 0%, 15%),
+    0 0 30px hsl(0, 0%, 15%),
+    0 0 40px hsl(0, 0%, 15%),
+    0 0 50px hsl(0, 0%, 15%),
+    0 0 100px hsl(0, 0%, 15%);
+}
+
+.button-24 span:nth-child(1),
+.button-24 span:nth-child(3) {
+  width: 40px;
+  height: 4px;
+}
+.button-24 span:nth-child(2),
+.button-24 span:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+.button-24 span:nth-child(1) {
+  top: calc(50% - 3px);
+  left: -50px;
+  transition: 0.25s ease-in-out;
+  tansform-origin: left;
+  transition-delay: 0.25s;
+}
+.button-24:hover span:nth-child(1) {
+  left: calc(50% - 3px);
+  transform: scaleX(0);
+  transition-delay: 0;
+}
+.button-24 span:nth-child(2) {
+  top: -75%;
+  left: 50%;
+  transition: 0.25s ease-in-out;
+  tansform-origin: top;
+  transition-delay: 0.25s;
+}
+.button-24:hover span:nth-child(2) {
+  top: 0;
+  transform: scaleY(0);
+  transition-delay: 0;
+}
+.button-24 span:nth-child(3) {
+  top: calc(50% - 3px);
+  right: -50px;
+  transition: 0.25s ease-in-out;
+  tansform-origin: right;
+  transition-delay: 0.25s;
+}
+.button-24:hover span:nth-child(3) {
+  right: 50%;
+  transform: scaleX(0);
+  transition-delay: 0;
+}
+.button-24 span:nth-child(4) {
+  bottom: -75%;
+  left: 50%;
+  transition: 0.25s ease-in-out;
+  tansform-origin: bottom;
+  transition-delay: 0.25s;
+}
+.button-24:hover span:nth-child(4) {
+  bottom: 0;
+  transform: scaleY(0);
+  transition-delay: 0;
+}
+.button-24:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 15%);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 0.25s;
+  z-index: -1;
+}
+.button-24:hover:before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow:
+    0 0 10px hsl(0, 0%, 15%),
+    0 0 30px hsl(0, 0%, 15%),
+    0 0 60px hsl(0, 0%, 15%);
+}
+.button-25 {
+  color: hsl(0, 0%, 100%);
+  transition: all 0.25s;
+  background: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(250, 52, 52, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: none;
+  border-left: none;
+  z-index: 10;
+  border-radius: 30px;
+  over-flow: hidden;
+  width: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+}
+.button-25:hover {
+  letter-spacing: 3px;
+}
+.button-25:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), transparent);
+  transform: skewX(45deg);
+  transition: 0.1s;
+  transition-delay: 0.25s;
+}
+.button-25:hover:before {
+  transform: skewX(45deg) translateX(170%);
+  transition-delay: 0;
+}
+
 @keyframes wave {
   0% {
     background-position-x: 0;

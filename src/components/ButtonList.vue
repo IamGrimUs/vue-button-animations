@@ -38,7 +38,7 @@ export default {
 section {
   display: flex;
   flex-flow: column nowrap;
-  gap: 2rem;
+  gap: 5rem;
 }
 @media screen and (min-width: 800px) {
   section {

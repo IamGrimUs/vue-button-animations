@@ -382,7 +382,7 @@
 }
 .image-section-10 .copy-block h1 {
   padding: 20px;
-  background-color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 0%) s;
   width: 100%;
   text-align: center;
   transition: all 0.25s;

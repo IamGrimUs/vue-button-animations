@@ -1,10 +1,30 @@
 @import './base.css';
 @import './button.css';
+@import './image-section.css';
+@import './typograph.css';
 
 #app {
   margin: 0 auto;
   font-weight: normal;
   padding: 0 4rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5rem;
+}
+@media screen and (min-width: 800px) {
+  section {
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 5rem;
+    justify-content: center;
+    margin: 2rem auto;
+  }
 }
 button {
   background: none;

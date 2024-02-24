@@ -1,0 +1,11 @@
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+}

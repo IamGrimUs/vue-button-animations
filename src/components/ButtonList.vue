@@ -33,20 +33,3 @@ export default {
     </template>
   </section>
 </template>
-
-<style scoped>
-section {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 5rem;
-}
-@media screen and (min-width: 800px) {
-  section {
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 5rem;
-    justify-content: center;
-    margin: 2rem auto;
-  }
-}
-</style>

@@ -1,65 +1,143 @@
 <template>
   <Section>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <template v-for="n in 13" :key="n + 'b'">
+      <template v-if="n === 3">
+        <ul :class="`menu-section-${n}`">
+          <li>
+            <a href="#"
+              >Home
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >About
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Services
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Portfolio
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Contact
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+        </ul>
+      </template>
+      <template v-else-if="n === 6">
+        <ul :class="`menu-section-${n}`">
+          <li>
+            <a href="#">
+              <span>Home</span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>About</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Services</span>
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Portfolio</span>
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Contact</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </template>
+      <template v-else-if="n === 8">
+        <ul :class="`menu-section-${n}`">
+          <li>
+            <a href="#"
+              >Home
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >About
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Services
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Portfolio
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Contact
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+        </ul>
+      </template>
+      <template v-else>
+        <ul :class="`menu-section-${n}`">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </template>
+    </template>
   </Section>
 </template>
 
 <style scoped>
 section {
   flex-grow: 1;
-}
-ul {
-  display: flex;
-  padding: 0;
-  margin: 0 auto;
-  flex-direction: wrap;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 840px;
-}
-ul li {
-  font-size: 1.3rem;
-  list-style: none;
-}
-ul li a {
-  text-decoration: none;
-  color: hsl(0, 0%, 15%);
-  display: block;
-  padding: 10px 15px;
-  position: relative;
-}
-ul li a:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: hsl(0, 0%, 15%);
-  transform: scaleX(0);
-  transition: all 0.25s;
-  transform-origin: left;
-}
-ul li a:hover:before,
-ul li a:hover:after {
-  transform: scaleX(1);
-}
-ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: hsl(0, 0%, 15%);
-  transform: scaleX(0);
-  transition: all 0.25s;
-  transform-origin: right;
 }
 </style>

@@ -2,12 +2,14 @@
 @import './button.css';
 @import './image-section.css';
 @import './typograph.css';
+@import './menu.css';
 
 #app {
   margin: 0 auto;
   font-weight: normal;
   padding: 0 4rem;
 }
+/*______________-elements-______________*/
 img {
   width: 100%;
   display: block;
@@ -17,14 +19,27 @@ section {
   flex-flow: column nowrap;
   gap: 5rem;
 }
-@media screen and (min-width: 800px) {
-  section {
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 5rem;
-    justify-content: center;
-    margin: 2rem auto;
-  }
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  flex-direction: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 840px;
+}
+ul li {
+  font-size: 1.3rem;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 15%);
+  display: block;
+  padding: 5px 10px;
+  position: relative;
+  transition: all 0.25s;
+  text-transform: uppercase;
 }
 button {
   background: none;
@@ -36,6 +51,16 @@ button {
   padding: 1.25rem 1.5rem;
   position: relative;
 }
+@media screen and (min-width: 800px) {
+  section {
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 5rem;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+}
+/*______________-classes-______________*/
 .background-color {
   flex-basis: calc(1 / 6 * 100%);
   padding: 3rem;

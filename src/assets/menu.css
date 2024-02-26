@@ -330,3 +330,36 @@
   right: -10px;
   opacity: 1;
 }
+
+.menu-section-9 li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid rgb(255, 85, 51);
+  border-left: 2px solid rgb(255, 85, 51);
+  transition: all 0.25s;
+  box-sizing: border-box;
+  transform-origin: left;
+}
+.menu-section-9 li a:hover:before,
+.menu-section-9 li a:hover:after {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+}
+.menu-section-9 li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(255, 85, 51);
+  border-right: 2px solid rgb(255, 85, 51);
+  transition: all 0.25s;
+  box-sizing: border-box;
+  transform-origin: right;
+}

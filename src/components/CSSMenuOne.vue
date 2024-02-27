@@ -142,7 +142,7 @@
           </li>
         </ul>
       </template>
-      <template v-else-if="n === 11">
+      <template v-else-if="n === 11 || n === 13">
         <section class="menu-container">
           <ul :class="`menu-section-${n}`">
             <li>
@@ -163,6 +163,25 @@
           </ul>
         </section>
       </template>
+      <template v-else-if="n === 12">
+        <ul :class="`menu-section-${n}`">
+          <li>
+            <a href="#" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+          </li>
+          <li>
+            <a href="#" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+          </li>
+          <li>
+            <a href="#" data-text="&nbsp;Services">&nbsp;Services&nbsp;</a>
+          </li>
+          <li>
+            <a href="#" data-text="&nbsp;Portfolio">&nbsp;Portfolio&nbsp;</a>
+          </li>
+          <li>
+            <a href="#" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+          </li>
+        </ul>
+      </template>
       <template v-else>
         <ul :class="`menu-section-${n}`">
           <li><a href="#">Home</a></li>
@@ -178,9 +197,11 @@
 
 <style scoped>
 section {
-  flex-grow: 1;
+  flex-basis: 100%;
 }
 .menu-container {
+  margin: 2rem 0 4rem;
   position: relative;
+  overflow: hidden;
 }
 </style>

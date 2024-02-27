@@ -407,3 +407,66 @@
   text-stroke: 2px black;
   transition: all 0.25s;
 }
+
+.menu-section-11 {
+  flex-direction: column;
+  margin: 3rem 0;
+}
+.menu-section-11 li {
+  text-align: center;
+}
+.menu-section-11 li a {
+  display: inline-flex;
+  position: inherit;
+  width: 100%;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-section-11:hover li a {
+  color: #0002;
+}
+.menu-section-11 li a:hover {
+  color: black;
+  background-color: #fff;
+}
+.menu-section-11 li a:before {
+  content: 'hover';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  z-index: -1;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: letter-spacing 0.25s;
+}
+.menu-section-11 li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  letter-spacing: 10px;
+}
+.menu-section-11 li:nth-child(1) a:before {
+  background: #81ecec;
+}
+.menu-section-11 li:nth-child(2) a:before {
+  background: #ff7675;
+}
+.menu-section-11 li:nth-child(3) a:before {
+  background: #55efc4;
+}
+.menu-section-11 li:nth-child(4) a:before {
+  background: #a29bfe;
+}
+.menu-section-11 li:nth-child(5) a:before {
+  background: #fd79a8;
+}

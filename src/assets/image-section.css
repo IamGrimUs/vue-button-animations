@@ -351,7 +351,7 @@
   border: 5px solid hsl(0, 0%, 0%);
 }
 .image-section-10 .copy-block {
-  top: 0;
+  top: -20px;
   left: 0;
 }
 .image-section-10:before {
@@ -388,7 +388,7 @@
   transition-delay: 0.3s;
 }
 .image-section-10 .copy-block p {
-  width: 80%;
+  width: 90%;
   align-self: center;
   transform: translateY(-350px);
   transition: all 0.25s;

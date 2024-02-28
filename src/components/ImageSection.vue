@@ -6,3 +6,9 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+section {
+  flex-flow: row wrap;
+}
+</style>

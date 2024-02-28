@@ -50,7 +50,7 @@ a:before {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 12px;
+  height: 2px;
   border-bottom: 2px solid hsl(0, 0%, 30%);
   transform-origin: right;
   transition: all 0.25s;

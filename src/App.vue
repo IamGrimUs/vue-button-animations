@@ -18,8 +18,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 img {
-  max-width: 400px;
-  margin-bottom: 1.5rem;
+  max-width: 280px;
+  margin-bottom: 0.75rem;
+  margin-left: 3rem;
 }
 h1 span {
   font-size: 0.75em;
@@ -28,7 +29,10 @@ h1 span {
   margin-top: 2.5px;
 }
 header {
-  margin: 3rem auto 0;
+  margin: 1.5rem auto 0;
   max-width: 580px;
+}
+main {
+  margin-bottom: 6rem;
 }
 </style>

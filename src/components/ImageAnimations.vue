@@ -5,16 +5,15 @@ import ImageSection from './ImageSection.vue'
   <section>
     <template v-for="n in 10" :key="n + 'a'">
       <ImageSection v-if="n > 5" :class="`image-section-${n}`">
-        <h1>Really good headline</h1>
+        <h2>Really good headline</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos et ratione tempore est
-          temporibus. Accusantium voluptatem dignissimos incidunt quo quas nemo alias dolorum, cum
-          porro error deleniti quam animi!
+          temporibus. Accusantium voluptatem dignissimos incidunt!
         </p>
         <a href="#">read more</a>
       </ImageSection>
       <ImageSection v-else :class="`image-section-${n}`">
-        <h1>Really good headline</h1>
+        <h2>Really good headline</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, dolores, consequuntur
           recusandae maiores?
@@ -27,7 +26,8 @@ import ImageSection from './ImageSection.vue'
 <style scoped>
 section {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-flow: row wrap;
 }
 </style>

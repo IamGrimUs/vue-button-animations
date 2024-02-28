@@ -53,10 +53,13 @@
 
 .image-section-4 .copy-block {
   background-color: rgba(0, 0, 0, 1);
-  height: 30%;
+  height: 50%;
   left: 0;
   bottom: 0;
   transform: translateY(100%);
+}
+.image-section-4 .copy-block h2 {
+  margin-bottom: 1rem;
 }
 .image-section-4:hover .copy-block {
   transform: translateY(0);
@@ -120,16 +123,18 @@
   left: 0;
   justify-content: space-around;
 }
+
 .image-section-6:hover:before {
   transform: translate(-260px, -150px) rotate(45deg);
 }
-.image-section-6 .copy-block h1 {
+.image-section-6 .copy-block h2 {
   padding: 20px;
   background-color: hsl(0, 0%, 0%);
   width: 100%;
   text-align: center;
   transform: translate(200px, -200px);
   transition: all 0.25s;
+  margin-bottom: 1rem;
 }
 .image-section-6 .copy-block p {
   width: 80%;
@@ -147,7 +152,7 @@
   transition: all 0.25s;
   transform: translateY(150px);
 }
-.image-section-6:hover .copy-block h1 {
+.image-section-6:hover .copy-block h2 {
   transform: translate(0, 0);
   transition-delay: 0.2s;
 }
@@ -179,15 +184,16 @@
   top: 0;
   left: 0;
 }
-.image-section-7 .copy-block h1 {
+.image-section-7 .copy-block h2 {
   padding: 20px;
   background-color: hsl(0, 0%, 0%);
   width: 100%;
   text-align: center;
   transition: all 0.25s;
   transform: translateY(-220px);
+  margin-bottom: 1rem;
 }
-.image-section-7:hover .copy-block h1 {
+.image-section-7:hover .copy-block h2 {
   transform: translateY(-10px);
   transition-delay: 0.3s;
 }
@@ -223,6 +229,9 @@
   top: 0;
   left: 0;
 }
+.image-section-8 .copy-block h2 {
+  margin-bottom: 1rem;
+}
 .container.image-section-8 img {
   transition-delay: 0.25s;
 }
@@ -245,7 +254,7 @@
   transform: scale(1) rotate(0);
   transition-delay: 0.25s;
 }
-.image-section-8 .copy-block h1 {
+.image-section-8 .copy-block h2 {
   padding: 20px;
   background-color: hsl(0, 0%, 0%);
   width: 100%;
@@ -253,7 +262,7 @@
   opacity: 0;
   transition: all 0.25s;
 }
-.image-section-8:hover .copy-block h1,
+.image-section-8:hover .copy-block h2,
 .image-section-8:hover .copy-block p,
 .image-section-8:hover .copy-block a {
   opacity: 1;
@@ -270,7 +279,7 @@
   text-decoration: none;
   background-color: hsl(0, 0%, 0%);
   padding: 1rem 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 20px;
   align-self: center;
   color: hsl(0, 0%, 100%);
@@ -296,12 +305,13 @@
 .image-section-9:hover:before {
   opacity: 1;
 }
-.image-section-9 .copy-block h1 {
+.image-section-9 .copy-block h2 {
   padding: 20px;
   background-color: hsl(0, 0%, 0%);
   width: 100%;
   text-align: center;
   transition: all 0.25s;
+  margin-bottom: 1rem;
 }
 .image-section-9 .copy-block p {
   width: 80%;
@@ -309,13 +319,13 @@
   transition: all 0.25s;
 }
 .image-section-9 .copy-block p,
-.image-section-9 .copy-block h1 {
+.image-section-9 .copy-block h2 {
   transform: scale(10);
   opacity: 0;
   transition: all 0.25s;
 }
 .image-section-9:hover .copy-block p,
-.image-section-9:hover .copy-block h1 {
+.image-section-9:hover .copy-block h2 {
   transform: scale(1);
   opacity: 1;
   transition-delay: 0.3s;
@@ -387,24 +397,24 @@
   transform: translateY(20px);
   transition-delay: 0.5s;
 }
-.image-section-10 .copy-block h1 {
+.image-section-10 .copy-block h2 {
   padding: 20px;
-  background-color: hsl(0, 0%, 0%) s;
+  background-color: hsl(0, 0%, 0%);
   width: 100%;
   text-align: center;
   transition: all 0.25s;
   transform: translateY(-350px);
 }
-.image-section-10:hover .copy-block h1 {
+.image-section-10:hover .copy-block h2 {
   transform: translateY(0);
   transition-delay: 0.6s;
 }
 
 .container {
-  width: 100%;
+  flex-basis: 45%;
   height: 100%;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 420px;
+  max-height: 420px;
   position: relative;
   overflow: hidden;
 }
@@ -420,5 +430,6 @@
   justify-content: center;
   align-items: center;
   color: hsl(0, 0%, 100%);
+  padding: 0 1rem;
   transition: all 0.25s;
 }

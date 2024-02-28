@@ -4,40 +4,35 @@ import { RouterLink } from 'vue-router'
 <template>
   <nav>
     <ul>
-      <li><RouterLink to="/menus">Menu animations</RouterLink></li>
-      <li><RouterLink to="/buttons">Button animations</RouterLink></li>
-      <li><RouterLink to="/images">Image animations</RouterLink></li>
-      <li><RouterLink to="/cards">Card animations</RouterLink></li>
+      <li><RouterLink to="/menus">menus</RouterLink></li>
+      <li><RouterLink to="/buttons">buttons</RouterLink></li>
+      <li><RouterLink to="/images">images</RouterLink></li>
+      <li><RouterLink to="/cards">cards</RouterLink></li>
     </ul>
   </nav>
   <img src="@/assets/acorn.svg" />
-  <span>buit by r_dbl_l</span>
+  <span>code by r_dbl_l</span>
 </template>
 
 <style scoped>
 nav {
-  max-width: 445px;
+  max-width: 90%;
   margin: 0 auto;
 }
 ul {
-  flex-direction: column;
   align-items: center;
-  flex-direction: column;
-  align-items: flex-end;
   margin-bottom: 6rem;
+  flex-wrap: wrap;
 }
 ul li {
-  width: 100%;
   text-align: left;
 }
 ul li a {
   text-transform: none;
   font-size: 1.5rem;
-  text-decoration: underline;
 }
-
 img {
-  width: 60px;
+  width: 30px;
   position: absolute;
   bottom: 1%;
   right: 2%;
@@ -50,6 +45,24 @@ span {
   left: 50%;
   color: hsl(0, 0%, 40%);
   transform: translateX(-50%);
-  /* border: 1px solid red; */
+}
+a:before {
+  content: '';
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid hsl(0, 0%, 30%);
+  transform-origin: center;
+  transition: all 0.25s;
+  transform: scaleX(0);
+}
+a:hover:before {
+  border-color: hsl(194, 100%, 44%);
+  transform: scaleX(1);
+}
+a:hover {
+  color: hsl(194, 100%, 44%);
 }
 </style>

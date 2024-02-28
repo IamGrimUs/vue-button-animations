@@ -1,5 +1,5 @@
 <template>
-  <Section>
+  <Section class="menu-section-container">
     <template v-for="n in 13" :key="n + 'b'">
       <template v-if="n === 3">
         <ul :class="`menu-section-${n}`">
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </template>
-      <template v-else-if="n === 6">
+      <template v-else-if="n === 9">
         <ul :class="`menu-section-${n}`">
           <li>
             <a href="#">
@@ -196,12 +196,24 @@
 </template>
 
 <style scoped>
-section {
+/* section {
   flex-basis: 100%;
+} */
+
+.menu-section-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu-section-9,
+.menu-section-10,
+.menu-section-12,
+.menu-container:last-child {
+  flex-basis: 40%;
+  width: inherit;
 }
 .menu-container {
-  margin: 2rem 0 4rem;
   position: relative;
   overflow: hidden;
+  flex-basis: 100%;
 }
 </style>

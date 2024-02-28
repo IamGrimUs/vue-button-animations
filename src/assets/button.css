@@ -512,7 +512,7 @@
   content: '';
   position: absolute;
   height: 100%;
-  width: 110%;
+  width: 120%;
   top: 0;
   left: -15px;
   border-top: 2px solid hsl(0, 0%, 15%);

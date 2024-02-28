@@ -33,3 +33,16 @@ export default {
     </template>
   </section>
 </template>
+
+<style scoped>
+section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5;
+}
+@media (min-width: 780px) {
+  section {
+    flex-flow: row wrap;
+  }
+}
+</style>

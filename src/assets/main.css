@@ -14,20 +14,20 @@
 /*______________-elements-______________*/
 img {
   width: 100%;
-
   display: block;
 }
 
 section {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   gap: 5rem;
 }
+
 ul {
   display: flex;
   padding: 0;
   margin: 0 auto;
-  flex-direction: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
   max-width: 840px;
@@ -52,19 +52,10 @@ button {
   flex-basis: calc(1 / 6 * 100%);
   font-family: sans-serif;
   font-size: 1.75rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.1rem 1.3rem;
   position: relative;
 }
 
-@media screen and (min-width: 800px) {
-  section {
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 5rem;
-    justify-content: center;
-    margin: 2rem auto;
-  }
-}
 /*______________-classes-______________*/
 .background-color {
   flex-basis: calc(1 / 6 * 100%);

@@ -1,71 +1,80 @@
 <template>
   <section>
-    <div class="card">
-      <div class="content">
-        <h2>design</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur mollitia odio,
-          dolorum itaque unde quisquam, in placeat commodi eius error explicabo! Voluptate adipisci,
-          doloremque repellat consequatur dolorum impedit saepe iste!
-        </p>
-        <a href="#">read more</a>
+    <template v-for="n in 6" :key="n + 'c'">
+      <div :class="'card-' + n">
+        <div class="imgbox" v-if="n === 2">
+          <img src="@/assets/1.jpg" />
+        </div>
+        <template v-if="n === 4 || n === 5">
+          <div class="face face1">
+            <template v-if="n === 5">
+              <div class="imgbox">
+                <img src="@/assets/1.png" />
+                <h3>design</h3>
+              </div>
+            </template>
+            <div v-else :class="'content-' + n">
+              <h2>design</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur mollitia odio,
+                dolorum itaque unde quisquam, in placeat commodi eius error explicabo! Voluptate
+                adipisci, doloremque repellat consequatur dolorum impedit saepe iste!
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="face face2">
+            <template v-if="n === 5">
+              <div :class="'content-' + n">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur mollitia
+                  odio, dolorum itaque unde quisquam, in placeat commodi eius error explicabo!
+                  Voluptate adipisci, doloremque repellat consequatur dolorum impedit saepe iste!
+                </p>
+                <a href="#">read more</a>
+              </div>
+            </template>
+            <h2 v-else>88</h2>
+          </div>
+        </template>
+        <template v-else-if="n === 6">
+          <div class="imgbox">
+            <img src="@/assets/headshot.jpg" />
+          </div>
+          <div class="details">
+            <h2>
+              john doe
+              <span>founder</span>
+            </h2>
+          </div>
+        </template>
+        <div v-else :class="'content-' + n">
+          <h2>design</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur mollitia odio,
+            dolorum itaque unde quisquam, in placeat commodi eius error explicabo! Voluptate
+            adipisci, doloremque repellat consequatur dolorum impedit saepe iste!
+          </p>
+          <a href="#" v-if="n !== 2">read more</a>
+        </div>
+        <img v-if="n === 3" src="@/assets/chad.svg" />
       </div>
-    </div>
+    </template>
   </section>
 </template>
 
 <style scoped>
-.card {
-  position: relative;
-  width: 320px;
-  padding: 40px;
-  background-color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-.card:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: calc(-100% + 5px);
-  width: 100%;
-  height: 100%;
-  background-color: hsl(0, 0%, 15%);
-  z-index: 1;
-  transition: all 0.25s;
-}
-.card:hover:before {
-  bottom: 0;
-}
-.content {
-  position: relative;
-  text-transform: capitalize;
-  color: #777;
-  z-index: 2;
-  transition: 0.25s;
+section {
+  gap: 15rem;
 }
 h2 {
   margin-bottom: 10px;
-  margin-top: 0;
-  font-size: 30px;
+  text-transform: capitalize;
+  font-size: 2.25rem;
 }
 p {
-  font-size: 18px;
+  font-size: 1rem;
   text-align: left;
   margin-bottom: 20px;
-}
-a {
-  margin-top: 10px;
-  font-size: 14px;
-  display: inline-block;
-  text-decoration: none;
-  color: #777;
-  padding: 6px 10px;
-  font-weight: 600;
-  background-color: white;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-}
-.card:hover .content {
-  color: white;
 }
 </style>

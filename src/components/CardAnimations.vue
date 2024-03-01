@@ -91,6 +91,19 @@
 </template>
 
 <style scoped>
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 5;
+  align-items: center;
+}
+@media (min-width: 780px) {
+  section {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+}
 h2 {
   margin-bottom: 10px;
   text-transform: capitalize;

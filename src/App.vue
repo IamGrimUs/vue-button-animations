@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/"><img src="@/assets/Artboard.svg" /></RouterLink>
     </div>
     <div>
-      <h1>Animations built&nbsp;with <span>Vue.js, CSS & ❤️</span></h1>
+      <h1>Animations built&nbsp;with <span>JavaScript, Vue.js, CSS & ❤️</span></h1>
     </div>
   </header>
   <main>
@@ -23,7 +23,7 @@ img {
   margin-left: 3rem;
 }
 h1 span {
-  font-size: 0.75em;
+  font-size: 0.65em;
   font-weight: 400;
   display: block;
   margin-top: 2.5px;

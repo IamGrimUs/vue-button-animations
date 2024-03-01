@@ -1,13 +1,30 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 </script>
+<script>
+export default {
+  data() {
+    return {
+      animationSections: [
+        'menus',
+        'buttons',
+        'images',
+        'cards',
+        'texts',
+        'socials',
+        'backgrounds',
+        'clip-masks'
+      ]
+    }
+  }
+}
+</script>
 <template>
   <nav>
     <ul>
-      <li><RouterLink to="/menus">menus</RouterLink></li>
-      <li><RouterLink to="/buttons">buttons</RouterLink></li>
-      <li><RouterLink to="/images">images</RouterLink></li>
-      <li><RouterLink to="/cards">cards</RouterLink></li>
+      <li v-for="section in animationSections" :key="section">
+        <RouterLink :to="`/${section}`">{{ section }}</RouterLink>
+      </li>
     </ul>
   </nav>
   <img src="@/assets/acorn.svg" />

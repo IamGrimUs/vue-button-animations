@@ -72,7 +72,7 @@
   padding: 10px 20px;
   color: #777;
   transition: 0.25s;
-  transform: translateY(-500px);
+  transform: translateY(-300px);
   opacity: 0;
 }
 .content-2 h2 {
@@ -91,7 +91,8 @@
 
 .card-3 {
   position: relative;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 360px;
   display: flex;
   align-items: center;

@@ -28,6 +28,26 @@ const router = createRouter({
       path: '/cards',
       name: 'cards',
       component: () => import('../views/CardView.vue')
+    },
+    {
+      path: '/texts',
+      name: 'texts',
+      component: () => import('../views/TextView.vue')
+    },
+    {
+      path: '/socials',
+      name: 'socials',
+      component: () => import('../views/SocialIconView.vue')
+    },
+    {
+      path: '/backgrounds',
+      name: 'backgrounds',
+      component: () => import('../views/BackgroundView.vue')
+    },
+    {
+      path: '/clip-masks',
+      name: 'clip-masks',
+      component: () => import('../views/ClipMasksView.vue')
     }
   ]
 })

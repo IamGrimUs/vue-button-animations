@@ -48,6 +48,11 @@ const router = createRouter({
       path: '/clip-masks',
       name: 'clip-masks',
       component: () => import('../views/ClipMasksView.vue')
+    },
+    {
+      path: '/loading',
+      name: 'loading',
+      component: () => import('../views/LoadingView.vue')
     }
   ]
 })

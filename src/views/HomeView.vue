@@ -13,7 +13,9 @@ export default {
         'texts',
         'socials',
         'backgrounds',
-        'clip-masks'
+        'clip-masks',
+        'loading',
+        'and more'
       ]
     }
   }

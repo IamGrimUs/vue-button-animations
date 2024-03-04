@@ -3,6 +3,7 @@ import PageNavigation from '../components/PageNavigation.vue'
 import BlurAnimation from '../components/BlurAnimation.vue'
 import FocusedText from '@/components/FocusedText.vue'
 import CityStreetAnimation from '@/components/CityStreetAnimation.vue'
+import BackgroundScroll from '@/components/BackgroundScroll.vue'
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import CityStreetAnimation from '@/components/CityStreetAnimation.vue'
     <FocusedText />
     <BlurAnimation />
     <CityStreetAnimation />
+    <BackgroundScroll />
   </section>
 </template>

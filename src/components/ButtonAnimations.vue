@@ -10,7 +10,7 @@ export default {
 
 <template>
   <section>
-    <template v-for="n in 25" :key="n">
+    <template v-for="n in 27" :key="n">
       <template v-if="n === 25">
         <div class="background-color">
           <div class="button-container">
@@ -38,6 +38,7 @@ export default {
 section {
   display: flex;
   flex-flow: column wrap;
+  align-items: flex-start;
   gap: 5;
 }
 @media (min-width: 780px) {

@@ -4,6 +4,7 @@ import BlurAnimation from '../components/BlurAnimation.vue'
 import FocusedText from '@/components/FocusedText.vue'
 import CityStreetAnimation from '@/components/CityStreetAnimation.vue'
 import BackgroundScroll from '@/components/BackgroundScroll.vue'
+import RainEffect from '@/components/RainEffect.vue'
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import BackgroundScroll from '@/components/BackgroundScroll.vue'
     <BlurAnimation />
     <CityStreetAnimation />
     <BackgroundScroll />
+    <RainEffect />
   </section>
 </template>

@@ -8,6 +8,7 @@
 <style scoped>
 .frame {
   height: 100vh;
+  max-height: 600px;
   position: relative;
   background-image: url('@/assets/images/bg.jpg');
   background-position: bottom left;

@@ -1,11 +1,14 @@
 <script setup>
 import PageNavigation from '@/components/PageNavigation.vue'
-import LoadingAnimations from '../components/LoadingAnimations.vue'
+import LoadingRotatingSquare from '../components/LoadingRotatingSquare.vue'
+import LoadingBouncingBalls from '@/components/LoadingBouncingBalls.vue'
 </script>
 
 <template>
   <PageNavigation pageName="loading animations" />
   <section>
-    <LoadingAnimations />
+    <LoadingBouncingBalls />
+    <LoadingRotatingSquare />
   </section>
 </template>
+../components/LoadingRotatingSquare.vue

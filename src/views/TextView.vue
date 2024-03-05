@@ -7,16 +7,21 @@ import OpenTextAnimation from '../components/OpenTextAnimation.vue'
 import FloatingText from '../components/FloatingText.vue'
 import RotatingText from '../components/RotatingText.vue'
 import LightingText from '@/components/LightingText.vue'
+import BeatingHeart from '@/components/BeatingHeart.vue'
+import TextMask from '@/components/TextMask.vue'
 </script>
+
 <template>
   <PageNavigation pageName="text animations" />
   <section>
-    <LightingText />
     <SmokyText />
     <TextFill />
-    <OpenTextAnimation />
-    <BorderAnimation />
+    <TextMask />
+    <LightingText />
     <FloatingText />
+    <BorderAnimation />
+    <BeatingHeart />
+    <OpenTextAnimation />
     <RotatingText />
   </section>
 </template>

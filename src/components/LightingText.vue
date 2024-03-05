@@ -1,19 +1,21 @@
 <template>
-  <ul>
-    <li>L</li>
-    <li>I</li>
-    <li>G</li>
-    <li>H</li>
-    <li>T</li>
-    <li>I</li>
-    <li>N</li>
-    <li>G</li>
-  </ul>
+  <div>
+    <ul>
+      <li>L</li>
+      <li>I</li>
+      <li>G</li>
+      <li>H</li>
+      <li>T</li>
+      <li>I</li>
+      <li>N</li>
+      <li>G</li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
 li {
-  animation: lighting 1.5s linear infinite;
+  animation: lighting 2s linear infinite;
 }
 li:nth-child(1) {
   animation-delay: 0;

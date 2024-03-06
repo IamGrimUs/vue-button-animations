@@ -5,5 +5,7 @@ import PageNavigation from '../components/PageNavigation.vue'
 
 <template>
   <PageNavigation pageName="card animations" />
-  <CardAnimations />
+  <section>
+    <CardAnimations />
+  </section>
 </template>

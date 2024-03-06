@@ -609,7 +609,7 @@
 }
 .content-9:hover .color {
   opacity: 1;
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 .content-9 .size h3,
 .content-9 .color h3 {
@@ -668,5 +668,5 @@
 .card-9:hover a {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.75s;
+  transition-delay: 0.5s;
 }

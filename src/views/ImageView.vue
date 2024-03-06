@@ -5,5 +5,7 @@ import PageNavigation from '../components/PageNavigation.vue'
 
 <template>
   <PageNavigation pageName="image animations" />
-  <ImageAnimations />
+  <section>
+    <ImageAnimations />
+  </section>
 </template>

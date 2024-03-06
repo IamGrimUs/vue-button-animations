@@ -5,5 +5,7 @@ import PageNavigation from '../components/PageNavigation.vue'
 
 <template>
   <PageNavigation pageName="button animations" />
-  <ButtonAnimations />
+  <section>
+    <ButtonAnimations />
+  </section>
 </template>

@@ -12,11 +12,12 @@
   display: flex;
   border-top: 10px solid black;
   max-width: 290px;
+  margin: 0 auto;
 }
 .cradle span {
   display: block;
   width: 3px;
-  height: 300px;
+  height: 200px;
   background-color: black;
   margin: 0 28px;
   position: relative;
